@@ -14,7 +14,7 @@ describe("40 + 2 equals 42", () => {
 describe("geek value equals 42", () => {
   let geek = 42;
   it("should return 42", () => {
-    assert.equal(geek, 42)
+    assert.equal(geek, 402)
   });
 });
 
