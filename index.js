@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 const calc = require('./calc');
 
 app.get('/', (req, res) => {
-  res.send("<h1>silly calculator API</h1>");
+  res.send("<h1>silly calculator API by Buster</h1>");
 });
 
 app.get('/add/:a/:b', (req, res) => {
@@ -18,7 +18,11 @@ app.get('/add/:a/:b', (req, res) => {
   });
 });
 
-
+app.get('/multiply/:a/:b', (req, res) => {
+  res.send({
+    result: calc.multiply(Number(req.params.a), Number(req.params.b))
+  });
+});
 
 
 app.listen(port);
