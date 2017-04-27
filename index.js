@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 const calc = require('./calc');
 
 app.get('/', (req, res) => {
-  res.send("<h1>silly calculator API</h1>");
+  res.send("<h1>silly calculator API by Buster</h1>");
 });
 
 app.get('/add/:a/:b', (req, res) => {
